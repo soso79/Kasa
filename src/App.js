@@ -1,6 +1,9 @@
-const App = () =>{
-return(
-    <h1>Hello react</h1>
-)
-}
-export default App
+import React from 'react';
+
+const App = (props) => {
+  return (
+    <h1>y en a marre</h1>
+  );
+};
+
+export default App;
