@@ -1,0 +1,33 @@
+.head {
+
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+.navi {
+
+    width: 450px;
+    height: 150px;
+    border: 2px solid red;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
