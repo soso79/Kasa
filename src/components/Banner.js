@@ -4,7 +4,7 @@ import '../styles/Banner.css'
 const Banner = (props) => {
     return (
         <div className='img-banner'>
-            <img src={photo} alt='banniere' classname='img-ban' />
+            <img src={photo} alt='banniere' classname='img-ban' style={{ width: '1670px', height: '123px' }} />
         </div>
     );
 };
