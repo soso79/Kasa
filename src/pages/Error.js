@@ -1,13 +1,16 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import '../styles/Error.css'
+import Header from '../components/Header';
+import photo from '../assets/404.png'
 
 const Error = (props) => {
     return (
 
         <div>
-            <Navigation />
-            <h1>Erreur 404</h1>
+            <Header />
+            <img src={photo} alt='page erreur' className='Error' />
         </div>
+
     );
 };
 

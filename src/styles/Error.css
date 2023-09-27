@@ -1,0 +1,16 @@
+.Error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+    /*position: absolute; pour positionner l'élément .Error par rapport à son contenant, */
+    top: 50%;
+    /*pour le déplacer vers le centre de son contenant,*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ajuster la position exacte en fonction de la taille de l'élément lui-même.*/
+
+    border: 2px solid red;
+
+}
