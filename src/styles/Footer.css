@@ -1,0 +1,22 @@
+.Footer {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    /* Ajoutez une couleur de fond pour le footer */
+    text-align: center;
+    /* Centrez le contenu horizontalement */
+    padding: 10px;
+    /* Ajoutez de l'espace autour du contenu du footer */
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    height: 50px;
+}
+
+.Footer-Text {
+    color: white;
+}
