@@ -1,5 +1,15 @@
 .navigation {
+
     width: 350px;
     height: 100px;
-    background-color: aquamarine;
+    border: 2px solid red;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
 }

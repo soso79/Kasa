@@ -7,10 +7,10 @@ const Navigation = (props) => {
         <div className='navigation'>
             <ul>
                 <NavLink to="/">
-                    <li>acceuil</li>
+                    <li>Acceuil</li>
                 </NavLink>
                 <NavLink to="/about">
-                    <li>a propos</li>
+                    <li>A propos</li>
                 </NavLink>
 
             </ul>
