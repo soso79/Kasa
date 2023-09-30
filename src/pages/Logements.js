@@ -1,11 +1,14 @@
 import React from 'react';
 import LogementsData from '../assets/logements.json';
-
+import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 
 const Logements = (props) => {
     return (
         <div>
+            <div>
+                <Header />
+            </div>
             <h1>Liste des Logements</h1>
             <ul>
                 {LogementsData.map((logement) => (
@@ -17,7 +20,7 @@ const Logements = (props) => {
                     </li>
                 ))}
             </ul>
-            <Navigation />
+
         </div>
     );
 };
