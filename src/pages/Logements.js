@@ -1,7 +1,8 @@
 import React from 'react';
 import LogementsData from '../assets/logements.json';
 import Header from '../components/Header';
-import Navigation from '../components/Navigation';
+import '../styles/Logements.css';
+
 
 const Logements = (props) => {
     return (
@@ -12,7 +13,7 @@ const Logements = (props) => {
             <h1>Liste des Logements</h1>
             <ul>
                 {LogementsData.map((logement) => (
-                    <li key={logement.id}>
+                    <li className='Logements-liste' key={logement.id}>
                         <h2>{logement.title}</h2>
                         <p>{logement.description}</p>
                         <img src={logement.cover} alt={logement.title} />
