@@ -2,6 +2,9 @@ import React from 'react';
 import LogementsData from '../assets/logements.json';
 import Header from '../components/Header';
 import '../styles/Logements.css';
+import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 
 const Logements = (props) => {
@@ -9,20 +12,27 @@ const Logements = (props) => {
         <div>
             <div>
                 <Header />
+                <Banner />
             </div>
-            <h1>Liste des Logements</h1>
-            <ul>
-                {LogementsData.map((logement) => (
-                    <li className='Logements-liste' key={logement.id}>
-                        <h2>{logement.title}</h2>
-                        <p>{logement.description}</p>
-                        <img src={logement.cover} alt={logement.title} />
-                        {/* Ajoutez ici le reste des informations du logement */}
-                    </li>
-                ))}
-            </ul>
 
+            <section className='Logements-can'>
+                {LogementsData.map((logement) => (
+                    <Link to={`/logement/${logement.id}`} key={logement.id} >
+
+
+
+                        <div className='Logements-liste' key={logement.id}>
+                            <h2>{logement.title}</h2>
+
+                            <img className='Logements-image' src={logement.cover} alt={logement.title} />
+
+                        </div>
+                    </Link>
+                ))}
+            </section>
+            <Footer />
         </div>
+
     );
 };
 
