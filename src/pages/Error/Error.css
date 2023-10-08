@@ -1,0 +1,22 @@
+.Error-Can {
+    text-align: center;
+}
+
+
+.Error-Title {
+    color: red;
+    margin: auto;
+    font-size: 180px;
+}
+
+.Error-Text {
+    display: block;
+    color: aqua;
+    font-size: 25px;
+
+}
+
+.Error-Link {
+    margin-top: 160px;
+    display: block;
+}

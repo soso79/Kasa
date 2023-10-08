@@ -1,7 +1,7 @@
 import React from 'react';
 import LogementsData from '../../assets/logements.json';
 import Header from '../../components/Header';
-import '../styles/Logements.css';
+import './Logements.css';
 import Banner from '../../components/Banner';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
