@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css";
-
+import Collapse from "../../components/Collapse";
 import Photo from "../../assets/img/About.png";
 
 const About = (props) => {
