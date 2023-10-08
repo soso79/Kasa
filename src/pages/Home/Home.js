@@ -1,7 +1,5 @@
 import React from 'react';
-import Banner from '../../components/Banner';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+
 import './Home.css'
 
 
@@ -12,12 +10,11 @@ const Home = (props) => {
         <div>
 
 
-            <Header />
-            <Banner />
+
             <div className='Home-Display'>
                 <p>blabldbkrogjdogjdgljgghfjgdfgljd</p>
             </div>
-            <Footer />
+
 
 
 

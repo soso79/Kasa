@@ -1,18 +1,17 @@
 import React from 'react';
 import LogementsData from '../../assets/logements.json';
-import Header from '../../components/Header';
+
 import './Logements.css';
-import Banner from '../../components/Banner';
+
 import { Link } from 'react-router-dom';
-import Footer from '../../components/Footer';
+
 
 
 const Logements = (props) => {
     return (
         <div>
             <div>
-                <Header />
-                <Banner />
+
             </div>
 
             <section className='Logements-can'>
@@ -30,7 +29,7 @@ const Logements = (props) => {
                     </Link>
                 ))}
             </section>
-            <Footer />
+
         </div>
 
     );
