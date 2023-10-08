@@ -1,10 +1,10 @@
 import React from 'react';
-import LogementsData from '../assets/logements.json';
-import Header from '../components/Header';
+import LogementsData from '../../assets/logements.json';
+import Header from '../../components/Header';
 import '../styles/Logements.css';
-import Banner from '../components/Banner';
+import Banner from '../../components/Banner';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
 
 
 const Logements = (props) => {

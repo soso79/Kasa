@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Error.css'
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import photo from '../assets/404.png'
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
 
 const Error = (props) => {
     return (
