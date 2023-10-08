@@ -1,10 +1,10 @@
 import React from 'react';
-import photo from '../assets/IMG.png'
 import '../styles/Banner.css'
 const Banner = (props) => {
     return (
-        <div className='img-banner'>
-            <img src={photo} alt='banniere' className='img-ban' />
+        <div className='Banner-Can'>
+            <img src={Photo} alt='banniere' className='img-ban' />
+            <p className='Banner-Text'>essai avant modif</p>
         </div>
     );
 };
