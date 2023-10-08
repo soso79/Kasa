@@ -10,8 +10,8 @@ const Error = (props) => {
 
 
             <h1 className='ErrorTitle'>404</h1>
-            <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
-            <NavLink to="/" className="lien-site lien-404">Retourner sur la page d’accueil</NavLink>
+            <p className='ErrorText'>Oups! La page que vous demandez n existe pas.</p>
+            <NavLink to="/" className="ErrorLink">Retourner sur la page d’accueil</NavLink>
 
 
 
