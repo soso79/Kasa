@@ -22,14 +22,14 @@ function Collapse({ data }) {
         <div className={`CollapseHome${data.length === 2 ? 'Two' : ''}`}>
             {data.map((collapse, index) => (
                 <div className="ContCollapse" key={index}>
-                    <div className="TittleCont" onClick={() => toggleCollapse(index)}>
-                        <h3 className="TittleCollapse">{collapse.title}</h3>
+                    <div className="ContTittle" onClick={() => toggleCollapse(index)}>
+                        <h3 className="CollapseTittle">{collapse.title}</h3>
                         <img src={ArrowDown} alt="Arrow" />
                     </div>
 
                     {/* Affiche le texte de la section uniquement si elle est ouverte */}
                     {openIndexes.includes(index) && (
-                        <div className="TextCollapse">{collapse.text}</div>
+                        <div className="CollapseText">{collapse.text}</div>
                     )}
                 </div>
             ))}
