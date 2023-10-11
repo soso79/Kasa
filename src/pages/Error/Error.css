@@ -1,13 +1,16 @@
 .Error-Can {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    border: 2px solid red;
 }
 
-
-.Error-Title {
-    color: red;
-    margin: auto;
-    font-size: 180px;
+.Error {
+    margin-top: 50px;
 }
+
 
 .Error-Text {
     display: block;

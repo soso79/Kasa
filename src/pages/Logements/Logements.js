@@ -10,9 +10,7 @@ import { Link } from 'react-router-dom';
 const Logements = (props) => {
     return (
         <div>
-            <div>
-
-            </div>
+            <Header />
 
             <section className='Logements-can'>
                 {LogementsData.map((logement) => (

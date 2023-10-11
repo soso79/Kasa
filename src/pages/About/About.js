@@ -21,7 +21,7 @@ const About = (props) => {
 
             <Collapse data={data} />
 
-
+            <Footer />
         </div>
     );
 };

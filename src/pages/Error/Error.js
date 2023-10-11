@@ -2,7 +2,8 @@ import React from 'react';
 import './Error.css';
 import { NavLink } from "react-router-dom";
 import Header from '../../components/Header';
-
+import Photo from '../../assets/404.png';
+import Footer from '../../components/Footer';
 
 const Error = (props) => {
     return (
@@ -10,10 +11,12 @@ const Error = (props) => {
         <div className='Error-Can'>
             <Header />
 
-            <h1 className='Error-Title'>404</h1>
-            <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
+            <div className='ErrorLogo'>
+                <img src={Photo} alt='page erreur' className='Error' />
+                <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
+            </div>
             <NavLink to="/" className="Error-Link">Retourner sur la page d’accueil</NavLink>
-
+            <Footer />
 
 
         </div>
