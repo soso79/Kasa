@@ -4,9 +4,8 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 2px solid blueviolet;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .img-logo {
@@ -22,16 +21,10 @@
 
 }
 
-.navi {
-
-    width: 450px;
-    height: 150px;
-    border: 2px solid red;
-}
 
 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 200);
 }
