@@ -1,11 +1,12 @@
-.head {
-    width: 100%;
+.Head {
+    width: 95%;
     color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 2px solid blueviolet;
+    margin-left: 20px;
 }
 
 .img-logo {

@@ -1,47 +1,38 @@
-.Home-Display {
-    border: 2px solid red;
-    width: auto;
-    height: 500px;
+/* Dans votre fichier Home.css */
+
+.Acceuil {
+    text-align: center;
 }
 
-/* Style pour la liste des logements */
-.Logements-Can {
-
-
+.Card {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid violet;
+    /* Ajustez la largeur selon vos besoins */
+}
+
+.Card a {
+
+    flex: 0 0 calc(33.33% - 20px);
+    /* 33.33% pour trois cartes par ligne, -20px pour l'espace entre les cartes */
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    font-size: 10px;
+
 
 }
 
-.Logements-liste {
-    border: 1px solid rgb(255, 132, 0);
-
-
-    width: 200px;
-    /* Pour créer 3 colonnes par ligne */
-    box-sizing: border-box;
-    text-align: center;
-    height: 450px;
-    margin: 30px;
-    box-shadow: inset 0 0 10px #000000;
+.Image-Card {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Pour maintenir le ratio de l'image */
 }
 
-/* Style pour les titres des logements */
-h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Style pour les descriptions des logements */
-p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-/* Style pour les images des logements */
-.Logements-image {
-    width: 10%;
-    object-fit: fill;
-
+.Vignettes {
+    border: 2px solid greenyellow;
 }
