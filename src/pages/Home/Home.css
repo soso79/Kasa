@@ -9,13 +9,13 @@
 }
 
 .Card {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
 
-
-    margin: 0 auto;
-    width: 90%;
     border: 2px solid rgb(238, 168, 130);
     /* Ajustez la largeur selon vos besoins */
 }
@@ -45,5 +45,6 @@
     border: 2px solid greenyellow;
     display: flex;
     flex-direction: column;
+
 
 }
