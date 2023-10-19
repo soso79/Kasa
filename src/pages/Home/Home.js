@@ -19,6 +19,7 @@ const Home = (props) => {
                     <NavLink to={`/logement/${logement.id}`} key={logement.id}>
 
                         <div className='Vignettes'>
+
                             <h2 className='Vignettes-Tittle'>{logement.title}</h2>
 
                             <img className='Image-Card' src={logement.cover} alt={logement.title} />
