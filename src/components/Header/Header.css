@@ -1,3 +1,30 @@
+.head {
+    max-width: 80vw;
+    height: 8vw;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: rgb(229, 71, 71);
+    font-weight: 700;
+    padding: 0 2rem;
+}
+
+.head-logo {
+    margin-right: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
 .Head {
     width: 95%;
     color: white;
@@ -28,3 +55,4 @@ ul {
     justify-content: space-between;
     border: 2px solid rgb(255, 0, 200);
 }
+*/

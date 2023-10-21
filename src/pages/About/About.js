@@ -3,7 +3,7 @@ import "./About.css";
 import Photo from '../../assets/img/About.png'
 import Collapse from '../../components/Collapse/Collapse'
 import data from '../../assets/collapse.json'
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 
 

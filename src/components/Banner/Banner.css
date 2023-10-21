@@ -1,4 +1,45 @@
 .BannerCan {
+    width: 100%;
+    margin: auto;
+    min-height: 200px;
+    border: 2px solid rgb(42, 18, 131);
+    background-image: url("../../assets/img/About.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    display: grid;
+    place-content: center;
+    color: white;
+    position: relative;
+
+
+}
+
+
+.BannerCan::before {
+    position: absolute;
+    content: "";
+    border-radius: 35px;
+    background-image: url("../../assets/img/About.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*reuni les proprietes top right bottom left*/
+    inset: 0;
+    opacity: 0.1;
+
+
+}
+
+
+
+
+
+
+
+/*
+.BannerCan {
     border-radius: 25px;
     height: 225px;
     margin-bottom: 35px;
@@ -34,3 +75,4 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+*/

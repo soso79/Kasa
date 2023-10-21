@@ -1,7 +1,7 @@
 import React from 'react';
 import './Error.css';
 import { NavLink } from "react-router-dom";
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import Photo from '../../assets/404.png';
 import Footer from '../../components/Footer';
 

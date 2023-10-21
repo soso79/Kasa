@@ -1,8 +1,10 @@
 import React from 'react';
 import LogementsData from '../../assets/logements.json';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import './Home.css';
-
+import Banner from '../../components/Banner/Banner';
+import Card from '../../components/Card/Card'
+import Footer from '../../components/Footer'
 import { NavLink } from 'react-router-dom';
 
 
@@ -11,10 +13,25 @@ import { NavLink } from 'react-router-dom';
 const Home = (props) => {
     return (
 
-        <div className='Acceuil'>
+        <div>
             <Header />
+            <section className='Container'>
+                <Banner />
+                <Card />
+            </section>
+            <Footer />
 
-            <div className='Card'>
+
+
+        </div>
+    );
+};
+
+export default Home;
+
+
+/*
+<div className='Card'>
                 {LogementsData.map((logement) => (
                     <NavLink to={`/logement/${logement.id}`} key={logement.id}>
 
@@ -27,13 +44,4 @@ const Home = (props) => {
                     </NavLink>
                 ))}
             </div>
-
-
-
-
-
-        </div>
-    );
-};
-
-export default Home;
+            */

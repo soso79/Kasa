@@ -1,12 +1,10 @@
 import React from "react";
 import "./Banner.css";
 
-function Banner({ image, texte }) {
+function Banner(props) {
     return (
         <div className="BannerCan">
-            <img className="Banner-img" src={image} alt="Bannière" />
-            <div className="Banner-Txt"></div>
-            <p className="Banner-Slogan">{texte}</p>
+            <h1>Chez vous , et partout ailleurs</h1>
         </div>
     );
 }
