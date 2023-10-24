@@ -1,13 +1,13 @@
-.BannerAbout {
-
-    width: 50%;
-    height: 225px;
-    object-fit: cover;
-    border-radius: 30px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.AboutCan {
 
-    border: 2px solid rgb(226, 43, 80);
-    height: 1000px;
+
+.AboutCan {
+    max-width: 80vw;
+    margin: auto;
+    padding-inline: 3rem;
+    margin-bottom: 250px;
 }

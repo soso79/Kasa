@@ -1,16 +1,18 @@
 import React from 'react';
 import LogementsData from '../../assets/logements.json';
-import Header from '../../components/Header/Header';
-import './Home.css';
-import Banner from '../../components/Banner/Banner';
-import Card from '../../components/Card/Card'
-import Footer from '../../components/Footer'
 import { NavLink } from 'react-router-dom';
+import './Home.css';
+import Header from '../../components/Header/Header';
+import Banner from '../../components/Banner/Banner';
+import Card from '../../components/Card/Card';
+import Footer from '../../components/Footer'
 
 
 
 
 const Home = (props) => {
+
+
     return (
 
         <div>
@@ -24,6 +26,7 @@ const Home = (props) => {
 
 
         </div>
+
     );
 };
 
@@ -45,3 +48,23 @@ export default Home;
                 ))}
             </div>
             */
+
+/*
+            <div>
+            <Header />
+            <section className='Container'>
+                <Banner />
+                <Card />
+            </section>
+            <Footer />
+
+
+
+        </div>
+        */
+
+/*
+ <h2 className='Vignettes-Tittle'>{logement.title}</h2>
+
+                     <img className='Image-Card' src={logement.cover} alt={logement.title} />
+                     */

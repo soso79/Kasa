@@ -10,10 +10,3 @@
     margin-top: 20px;
 
 }
-
-@media screen and (width <=768px) {
-    .appartement-card {
-        justify-content: center;
-        background-color: white;
-    }
-}

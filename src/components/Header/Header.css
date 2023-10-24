@@ -1,17 +1,28 @@
 .head {
     max-width: 80vw;
     height: 8vw;
+    margin-top: 2rem;
     margin: auto;
     display: flex;
     gap: 2rem;
+
     align-items: center;
     color: rgb(229, 71, 71);
     font-weight: 700;
     padding: 0 2rem;
 }
 
+.head a {
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.head a:hover {
+    text-decoration: underline;
+}
+
 .head-logo {
-    margin-right: auto;
+    margin-right: 45rem;
 
 }
 

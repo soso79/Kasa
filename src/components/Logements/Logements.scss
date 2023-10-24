@@ -1,15 +1,9 @@
 .logements {
-    min-width: 200px;
+
     background-color: rgb(200, 24, 71);
     border-radius: 20px;
     flex-basis: 30%;
     display: grid;
     align-items: flex-end;
-
-    &_title {
-        width: 40%;
-        color: aqua;
-        margin-left: 1rem;
-    }
 
 }

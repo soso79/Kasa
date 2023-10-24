@@ -1,6 +1,7 @@
 import React from 'react';
 import './Card.css';
-import Logements from '../../components/Logements/Logements'
+import Logements from '../../components/Logements/Logements';
+
 
 const Card = (props) => {
     return (
@@ -9,6 +10,9 @@ const Card = (props) => {
             <Logements />
             <Logements />
             <Logements />
+            <Logements />
+            <Logements />
+
 
         </div>
     );

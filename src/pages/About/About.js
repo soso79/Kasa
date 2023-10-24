@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css";
-import Photo from '../../assets/img/About.png'
+import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse'
 import data from '../../assets/collapse.json'
 import Header from '../../components/Header/Header';
@@ -12,17 +12,18 @@ import Footer from '../../components/Footer';
 
 const About = (props) => {
     return (
-        <div className='AboutCan'>
+        <div >
 
             <Header />
 
+            <section className='AboutCan'>
+                <Banner />
 
-            <img className='BannerAbout' alt='Paysage' src={Photo} />
-
-            <Collapse data={data} />
-
+                <Collapse data={data} />
+            </section>
             <Footer />
         </div>
+
     );
 };
 

@@ -1,8 +1,8 @@
 .BannerCan {
-    width: 100%;
+    width: 80vw;
     margin: auto;
-    min-height: 200px;
-    border: 2px solid rgb(42, 18, 131);
+    margin-bottom: 5rem;
+    min-height: 230px;
     background-image: url("../../assets/img/About.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,48 +31,3 @@
 
 
 }
-
-
-
-
-
-
-
-/*
-.BannerCan {
-    border-radius: 25px;
-    height: 225px;
-    margin-bottom: 35px;
-    position: relative;
-
-}
-
-.Banner-Img {
-    border-radius: 25px;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-
-
-.Banner-Txt {
-    background-color: #000000;
-    border-radius: 25px;
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.Banner-Slogan {
-    color: #ffffff;
-    font-size: 48px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
