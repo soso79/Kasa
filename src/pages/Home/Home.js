@@ -1,6 +1,6 @@
 import React from 'react';
-import LogementsData from '../../assets/logements.json';
-import { NavLink } from 'react-router-dom';
+
+
 import './Home.css';
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
@@ -18,6 +18,7 @@ const Home = (props) => {
         <div>
             <Header />
             <section className='Container'>
+
                 <Banner />
                 <Card />
             </section>

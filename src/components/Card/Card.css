@@ -1,4 +1,6 @@
 .appartement-card {
+
+    margin: auto;
     min-height: 35vw;
     background-color: rgb(155, 152, 152);
     display: flex;
@@ -8,5 +10,16 @@
     padding: 1rem;
     border-radius: 50px;
     margin-top: 20px;
+    margin-bottom: 2rem;
+    border: 2px solid red;
 
+}
+
+.appartement-card a {
+
+    border-radius: 20px;
+    width: 30%;
+    display: grid;
+    align-items: flex-end;
+    border: 2px solid red;
 }

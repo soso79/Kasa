@@ -2,16 +2,26 @@ import React from 'react';
 import './Logements.scss';
 
 
-const Logements = (props) => {
+
+const Logements = ({ id, title, cover }) => {
     return (
 
 
 
         <div className='logements'>
-            <p className='logements_title'> Titre de la location</p>
+
+            <img src={cover} alt={title} />
+
+
+
 
         </div>
+
     );
 };
 
 export default Logements;
+
+/*<h2 className='logements-title'>{title}</h2>*/
+
+

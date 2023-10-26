@@ -1,7 +1,7 @@
 .BannerCan {
-    width: 80vw;
+    width: 100%;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     min-height: 230px;
     background-image: url("../../assets/img/About.png");
     background-repeat: no-repeat;
@@ -12,6 +12,8 @@
     place-content: center;
     color: white;
     position: relative;
+
+
 
 
 }
