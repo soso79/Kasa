@@ -1,0 +1,36 @@
+.Logements-img {
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.Logements {
+    border: 2px solid red;
+}
+
+.appart {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Logements-can {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.Logements-rate {
+    border: 2px solid red;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rate-picture {
+    border-radius: 50px;
+}
