@@ -3,6 +3,23 @@ import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import './Appartements.scss'
 import Header from "../../components/Header/Header"
+
+const renderRatingStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+            stars.push(<span key={i} className="star">&#9733;</span>);
+        } else {
+            stars.push(<span key={i} className="star">&#9734;</span>);
+        }
+    }
+    return stars;
+};
+
+
+
+
+
 const Logements = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
@@ -27,7 +44,7 @@ const Logements = () => {
 
                     <p> {logement.host.name}
                         <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} /></p>
-                    <p>{logement.rating}</p>
+                    <p>{renderRatingStars(logement.rating)}</p>
                 </div>
 
             </div>
