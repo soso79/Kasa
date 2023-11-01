@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import './Appartements.scss'
-import Header from "../../components/Header/Header"
+import Header from "../../components/Header/Header";
+import Collapse from "../../components/Collapse/Collapse";
 
 const renderRatingStars = (rating) => {
     const stars = [];
@@ -16,17 +17,30 @@ const renderRatingStars = (rating) => {
     return stars;
 };
 
-
-
-
-
 const Logements = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 
+    const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
+    const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+
     if (!logement) {
         return <div>Logement non trouvé</div>;
     }
+
+    const data = [
+        {
+            title: 'Description',
+            text: logement.description
+        },
+        {
+            title: 'Equipements',
+            // Créer une liste avec les équipements
+            text: logement.equipments.map(equipment => (
+                <p className='TextCollapse' key={equipment}>{equipment}</p>
+            ))
+        }
+    ]
 
     return (
         <div className="Logements">
@@ -41,23 +55,19 @@ const Logements = () => {
                     <p>{logement.tags}</p>
                 </div>
                 <div className="Logements-rate">
-
-                    <p> {logement.host.name}
-                        <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} /></p>
+                    <div className="Logements-test">
+                        <div className="Logements-toto">
+                            <p className="Logements-titi"> {logement.host.name}</p>
+                        </div>
+                        <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
+                    </div>
                     <p>{renderRatingStars(logement.rating)}</p>
                 </div>
-
             </div>
-            <p>Équipements :</p>
-            <ul>
-                {logement.equipments.map((equipement, index) => (
-                    <li key={index}>{equipement}</li>
-                ))}
-            </ul>
-            <p> Description:{logement.description}</p>
-
-
-        </div>
+            <div className="drop">
+                <Collapse data={data} />
+            </div>
+        </div >
     );
 };
 

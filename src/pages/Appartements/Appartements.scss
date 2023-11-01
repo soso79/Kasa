@@ -16,7 +16,7 @@
 }
 
 .Logements-can {
-    border: 2px solid red;
+    border: 2px solid rgb(141, 18, 102);
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -32,5 +32,38 @@
 }
 
 .Rate-picture {
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.Logements-test {
+    border: 2px solid red;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.5em;
+
+
+}
+
+.Logements-toto {
+    border: 2px solid red;
+    width: 100px;
+    display: flex;
+
+
+}
+
+.Logements-titi {
+    border: 2px solid yellow;
+    display: flex;
+    color: aqua;
+
+}
+
+.drop {
+
+    /* Espacement entre les éléments */
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(255, 77, 0);
 }
