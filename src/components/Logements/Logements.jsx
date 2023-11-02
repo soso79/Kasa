@@ -15,6 +15,7 @@ const Logements = ({ id, title, cover }) => {
 
 
 
+
         </div>
 
     );

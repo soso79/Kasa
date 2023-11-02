@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
-
+import Error from "../Error/Error";
 const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -21,11 +21,10 @@ const Logements = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 
-    const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
-    const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+
 
     if (!logement) {
-        return <div>Logement non trouvé</div>;
+        return <Error />;
     }
 
     const data = [
@@ -56,9 +55,9 @@ const Logements = () => {
                 </div>
                 <div className="Logements-rate">
                     <div className="Logements-test">
-                        <div className="Logements-toto">
-                            <p className="Logements-titi"> {logement.host.name}</p>
-                        </div>
+
+                        <p className="Logements-titi"> {logement.host.name}</p>
+
                         <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
                     </div>
                     <p>{renderRatingStars(logement.rating)}</p>
