@@ -5,6 +5,7 @@ import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import Error from "../Error/Error";
+
 const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -21,8 +22,6 @@ const Logements = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 
-
-
     if (!logement) {
         return <Error />;
     }
@@ -34,12 +33,16 @@ const Logements = () => {
         },
         {
             title: 'Equipements',
-            // Créer une liste avec les équipements
             text: logement.equipments.map(equipment => (
                 <p className='TextCollapse' key={equipment}>{equipment}</p>
             ))
         }
-    ]
+    ];
+
+    // Pour afficher les tags avec des classes CSS
+    const tagsList = logement.tags.map((tag, index) => (
+        <span key={index} className="tag">{tag}</span>
+    ));
 
     return (
         <div className="Logements">
@@ -51,13 +54,11 @@ const Logements = () => {
                 <div className="Logements-tag">
                     <h2>{logement.title}</h2>
                     <p>{logement.location}</p>
-                    <p>{logement.tags}</p>
+                    <div className="tags-container">{tagsList}</div>
                 </div>
                 <div className="Logements-rate">
                     <div className="Logements-test">
-
                         <p className="Logements-titi"> {logement.host.name}</p>
-
                         <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
                     </div>
                     <p>{renderRatingStars(logement.rating)}</p>
@@ -66,7 +67,7 @@ const Logements = () => {
             <div className="drop">
                 <Collapse data={data} />
             </div>
-        </div >
+        </div>
     );
 };
 

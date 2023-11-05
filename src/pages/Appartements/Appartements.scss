@@ -63,3 +63,20 @@
     margin: auto;
     border: 2px solid rgb(255, 77, 0);
 }
+
+.tags-container {
+    display: flex;
+    gap: 1em;
+    border: 2px solid red;
+}
+
+
+.tag {
+    background-color: #FF6060;
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+
+}
