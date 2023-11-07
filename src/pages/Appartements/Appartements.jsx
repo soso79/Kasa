@@ -6,9 +6,8 @@ import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import Error from "../Error/Error";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import arrowRightImage from "../../assets/arrow_forward.png";
+import arrowLeftImage from "../../assets/arrow_back.png"
 
 const renderRatingStars = (rating) => {
     const stars = [];
@@ -21,6 +20,8 @@ const renderRatingStars = (rating) => {
     }
     return stars;
 };
+
+
 
 const Logements = () => {
     const { id } = useParams();
@@ -49,13 +50,13 @@ const Logements = () => {
     ));
 
     const sliderSettings = {
-
-        infinite: true, // Permettre une navigation infinie
-        speed: 500, // Vitesse de transition en millisecondes
-        slidesToShow: 1, // Nombre de slides à afficher à la fois
-        slidesToScroll: 1, // Nombre de slides à faire défiler à la fois
-        prevArrow: <FaArrowLeft className="slider-arrow prev" />,
-        nextArrow: <FaArrowRight className="slider-arrow next" />,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: <img className="Arrow-Prev" src={arrowLeftImage} />,
+        nextArrow: <img className="Arrow-Next" src={arrowRightImage} />,
         adaptiveHeight: true
     };
 
