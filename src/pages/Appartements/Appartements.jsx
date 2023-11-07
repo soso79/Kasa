@@ -5,6 +5,10 @@ import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import Error from "../Error/Error";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const renderRatingStars = (rating) => {
     const stars = [];
@@ -44,11 +48,28 @@ const Logements = () => {
         <span key={index} className="tag">{tag}</span>
     ));
 
+    const sliderSettings = {
+
+        infinite: true, // Permettre une navigation infinie
+        speed: 500, // Vitesse de transition en millisecondes
+        slidesToShow: 1, // Nombre de slides à afficher à la fois
+        slidesToScroll: 1, // Nombre de slides à faire défiler à la fois
+        prevArrow: <FaArrowLeft className="slider-arrow prev" />,
+        nextArrow: <FaArrowRight className="slider-arrow next" />,
+        adaptiveHeight: true
+    };
+
     return (
         <div className="Logements">
             <Header />
             <div className="Logements-img">
-                <img className="appart" src={logement.cover} alt={logement.title} />
+                <Slider {...sliderSettings}>
+                    {logement.pictures.map((image, index) => (
+                        <div key={index}>
+                            <img className="appart" src={image} alt={logement.title} />
+                        </div>
+                    ))}
+                </Slider>
             </div>
             <div className="Logements-can">
                 <div className="Logements-tag">
