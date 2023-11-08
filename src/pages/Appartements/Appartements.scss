@@ -6,6 +6,23 @@
     border: 2px solid rgb(98, 0, 255);
 }
 
+.prev-arrow,
+.next-arrow {
+    position: absolute; // Position absolue par rapport à la div parente
+    top: 50%; // Position verticale au milieu de l'image
+    transform: translateY(-50%); // Décalage vers le haut de 50% de la hauteur
+    cursor: pointer; // Curseur pointer pour indiquer que les flèches sont cliquables
+}
+
+.prev-arrow {
+    left: 25px; // Position à gauche de l'image
+}
+
+.next-arrow {
+    right: 25px; // Position à droite de l'image
+}
+
+
 
 
 

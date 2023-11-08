@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import Error from "../Error/Error";
+import ArrowLeft from "../../assets/arrow-left.png";
+import ArrowRight from "../../assets/arrow-right.png";
 import Footer from "../../components/Footer.js";
+
 const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -27,6 +30,22 @@ const Logements = () => {
     if (!logement) {
         return <Error />;
     }
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const handleNextImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === logement.pictures.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const handlePreviousImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? logement.pictures.length - 1 : prevIndex - 1
+        );
+    };
+
+
 
     const data = [
         {
@@ -52,7 +71,19 @@ const Logements = () => {
         <div className="Logements">
             <Header />
             <div className="Logements-img">
-                <img className="appart" src={logement.cover} alt={logement.title} />
+                <img className="appart" src={logement.pictures[currentImageIndex]} alt={logement.title} />
+                <img
+                    className="prev-arrow"
+                    src={ArrowRight}
+                    alt="Image précédente"
+                    onClick={handlePreviousImage}
+                />
+                <img
+                    className="next-arrow"
+                    src={ArrowLeft}
+                    alt="Image suivante"
+                    onClick={handleNextImage}
+                />
             </div>
             <div className="Logements-can">
                 <div className="Logements-tag">
