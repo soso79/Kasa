@@ -1,24 +1,13 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
-
-
-
-
-
-
 .Logements-img {
     position: relative;
-    width: 80%;
+    width: 80vw;
     margin: auto;
     height: 500px;
-    border: 2px solid red;
+    border: 2px solid rgb(98, 0, 255);
 }
 
 
-.Logements {
-    border: 2px solid red;
-}
+
 
 .appart {
     width: 100%;
@@ -35,10 +24,10 @@ p {
 }
 
 .Logements-can {
-    border: 2px solid rgb(141, 18, 102);
+
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 80vw;
     margin: auto;
 }
 
@@ -64,13 +53,26 @@ p {
 
 }
 
+.essai {
+    width: 100px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
+
+}
 
 .Logements-titi {
 
-    display: flex;
+
     color: #FF6060;
-    width: 80px;
+    width: 90px;
+    margin-left: 80px;
+
+
+
+
 
 
 
@@ -79,7 +81,7 @@ p {
 .drop {
 
     /* Espacement entre les éléments */
-    width: 80%;
+    width: 80vw;
     margin: auto;
     border: 2px solid rgb(255, 77, 0);
 }

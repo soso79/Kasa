@@ -11,6 +11,7 @@ const Logements = ({ id, title, cover }) => {
         <div className='logements'>
 
             <img src={cover} alt={title} />
+            <h2 className='logements-title'>{title}</h2>
 
 
 

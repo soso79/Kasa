@@ -1,10 +1,12 @@
 .Footer {
+    margin: auto;
     background-color: black;
     bottom: 0;
-    width: 80vw;
-    margin: auto;
+    width: 99%;
+    margin-top: 200px;
 
-    background-color: #333;
+
+
     /* Ajoutez une couleur de fond pour le footer */
     text-align: center;
     /* Centrez le contenu horizontalement */

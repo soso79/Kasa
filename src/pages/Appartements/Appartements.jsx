@@ -5,10 +5,7 @@ import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Collapse from "../../components/Collapse/Collapse";
 import Error from "../Error/Error";
-import Slider from "react-slick";
-import arrowRightImage from "../../assets/arrow_forward.png";
-import arrowLeftImage from "../../assets/arrow_back.png"
-
+import Footer from "../../components/Footer.js";
 const renderRatingStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -49,28 +46,13 @@ const Logements = () => {
         <span key={index} className="tag">{tag}</span>
     ));
 
-    const sliderSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: <img className="Arrow-Prev" src={arrowLeftImage} />,
-        nextArrow: <img className="Arrow-Next" src={arrowRightImage} />,
-        adaptiveHeight: true
-    };
+
 
     return (
         <div className="Logements">
             <Header />
             <div className="Logements-img">
-                <Slider {...sliderSettings}>
-                    {logement.pictures.map((image, index) => (
-                        <div key={index}>
-                            <img className="appart" src={image} alt={logement.title} />
-                        </div>
-                    ))}
-                </Slider>
+                <img className="appart" src={logement.cover} alt={logement.title} />
             </div>
             <div className="Logements-can">
                 <div className="Logements-tag">
@@ -80,7 +62,8 @@ const Logements = () => {
                 </div>
                 <div className="Logements-rate">
                     <div className="Logements-test">
-                        <p className="Logements-titi"> {logement.host.name}</p>
+                        <div className="essai">
+                            <p className="Logements-titi"> {logement.host.name}</p></div>
                         <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
                     </div>
                     <p>{renderRatingStars(logement.rating)}</p>
@@ -89,8 +72,11 @@ const Logements = () => {
             <div className="drop">
                 <Collapse data={data} />
             </div>
+            <Footer />
         </div>
+
     );
+
 };
 
 export default Logements;
