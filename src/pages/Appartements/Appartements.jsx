@@ -84,6 +84,7 @@ const Logements = () => {
                     alt="Image suivante"
                     onClick={handleNextImage}
                 />
+                <p className="compteur">Image {currentImageIndex + 1} sur {logement.pictures.length}</p>
             </div>
             <div className="Logements-can">
                 <div className="Logements-tag">
