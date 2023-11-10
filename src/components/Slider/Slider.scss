@@ -27,3 +27,14 @@
     height: 500px;
     object-fit: cover;
 }
+
+.Compteur {
+    position: absolute;
+    bottom: 0;
+    /* Aligner à la base */
+    left: 50%;
+    /* Centrer horizontalement */
+    transform: translateX(-50%);
+    /* Ajuster le centrage horizontal */
+    color: white;
+}

@@ -45,7 +45,7 @@ const Slider = () => {
                     alt="Image suivante"
                     onClick={handleNextImage}
                 />
-                <p className="compteur">Image {currentImageIndex + 1} sur {logement.pictures.length}</p>
+                <p className="Compteur"> {currentImageIndex + 1}/{logement.pictures.length}</p>
             </div>
         </div>
     );
