@@ -10,12 +10,15 @@ const Header = (props) => {
                     <img src={Logo} alt='logo kasa' />
                 </div>
             </NavLink>
-            <NavLink to="/">
-                <div>Acceuil</div>
-            </NavLink>
-            <NavLink to="/about">
-                <div>A propos</div>
-            </NavLink>
+            <div className='test'>
+                <NavLink to="/" className="head-nav-link">
+                    <div>Accueil</div>
+                </NavLink>
+                <NavLink to="/about" className="head-nav-link">
+                    <div>A propos</div>
+                </NavLink>
+            </div>
+
 
 
         </header>

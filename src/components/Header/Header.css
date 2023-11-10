@@ -1,21 +1,22 @@
 .head {
-    max-width: 80vw;
+    width: 80vw;
     height: 8vw;
-    margin-top: 2rem;
-    margin: auto;
+    margin: 2rem auto;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
-    gap: 1rem;
     align-items: center;
     color: rgb(229, 71, 71);
     font-weight: 700;
-    padding: 0 2rem;
     margin-bottom: 2rem;
+
+
 }
 
 .head a {
     text-decoration: none;
     color: #ff6060;
+
 }
 
 .head a:hover {
@@ -23,48 +24,23 @@
 }
 
 .head-logo {
-    margin-right: 45rem;
+    margin-right: 1rem;
 
 }
 
-
-
-
-
-
-
-
-
-
-/*
-.Head {
-    width: 95%;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid blueviolet;
-
-}
-
-.img-logo {
-
-    height: 100px;
-}
-
-.nav-link {
+.head-nav-link {
     text-decoration: none;
-    color: white;
+    color: #ff6060;
+    margin-left: 50px;
 
-    list-style: none;
 
+
+    /* Ajustez cette valeur selon les besoins */
 }
 
-
-ul {
+.test {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid rgb(255, 0, 200);
+
+
+
 }
-*/
