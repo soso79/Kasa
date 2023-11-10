@@ -3,7 +3,8 @@ import "./Rating.scss";
 import Error from "../../pages/Error/Error.js";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
-
+import StarFull from "../../assets/star-active.png";
+import StarEmpty from "../../assets/star-inactive.png";
 
 
 const Rating = () => {
@@ -18,9 +19,9 @@ const Rating = () => {
         const stars = [];
         for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.push(<span key={i} className="star">&#9733;</span>);
+                stars.push(<img key={i} src={StarFull} alt="Full Star" className="star" />);
             } else {
-                stars.push(<span key={i} className="star">&#9734;</span>);
+                stars.push(<img key={i} src={StarEmpty} alt="Empty Star" className="star" />);
             }
         }
         return stars;

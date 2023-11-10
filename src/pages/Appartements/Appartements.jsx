@@ -2,10 +2,10 @@ import React from "react";
 import './Appartements.scss'
 import Header from "../../components/Header/Header";
 import Rating from "../../components/Rating/Rating.jsx";
-import Footer from "../../components/Footer.js";
 import Slider from "../../components/Slider/Slider.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import DropDown from "../../components/DropDown/DropDown.jsx";
+import Footer from "../../components/Footer.js";
 
 
 const Appartements = (props) => {
