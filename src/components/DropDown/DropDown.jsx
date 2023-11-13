@@ -12,9 +12,7 @@ const DropDown = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 
-    if (!logement) {
-        return <Error />;
-    }
+
 
 
 

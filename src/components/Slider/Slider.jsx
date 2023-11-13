@@ -10,9 +10,7 @@ const Slider = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 
-    if (!logement) {
-        return <Error />;
-    }
+
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -29,7 +27,7 @@ const Slider = () => {
     };
 
     return (
-        <div className="Logements">
+        <div className="Slider">
             {/* ... Autres contenus du composant Logements */}
             <div className="Logements-img">
                 <img className="appart" src={logement.pictures[currentImageIndex]} alt="Logement" />

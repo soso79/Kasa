@@ -2,8 +2,9 @@
 
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 90%;
     margin: auto;
+    border: 2px solid red;
 }
 
 
@@ -11,7 +12,7 @@
 .drop {
 
     /* Espacement entre les éléments */
-    width: 80vw;
+    width: 90%;
     margin: auto;
-    border: 2px solid rgb(255, 0, 221);
+
 }

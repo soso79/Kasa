@@ -12,7 +12,7 @@ import Footer from '../../components/Footer';
 
 const About = (props) => {
     return (
-        <div >
+        <div className='About' >
 
             <Header />
 

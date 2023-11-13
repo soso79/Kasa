@@ -5,9 +5,12 @@ body {
 
 
 
+
 .AboutCan {
-    max-width: 80vw;
+    width: 90%;
+
     margin: auto;
     padding-inline: 3rem;
-    margin-bottom: 350px;
+
+
 }

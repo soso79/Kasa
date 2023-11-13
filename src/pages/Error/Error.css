@@ -1,10 +1,11 @@
 .Error-Can {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid red;
+
 }
 
 .Error {
