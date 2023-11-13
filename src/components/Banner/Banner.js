@@ -4,7 +4,7 @@ import "./Banner.css";
 function Banner(props) {
     return (
         <div className="BannerCan">
-            <h1>Chez vous , partout et ailleurs</h1>
+            <h1 className="Banner_Title">Chez vous , partout et ailleurs</h1>
         </div>
     );
 }

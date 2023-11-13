@@ -41,4 +41,9 @@
     .BannerCan {
         width: 100%;
     }
+
+    .Banner_Title {
+
+        width: 60%;
+    }
 }
