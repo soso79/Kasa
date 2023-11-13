@@ -6,7 +6,7 @@ const Footer = (props) => {
         <div className='Footer'>
 
             <img src={Logo} alt='logo kasa' className='Footer-Logo' />
-            <p className='Footer-Text'> © 2020 Kasa. All rights reservedAll rights reserved</p>
+            <p className='Footer-Text'> © 2020 Kasa. All rights reserved</p>
         </div>
     );
 };

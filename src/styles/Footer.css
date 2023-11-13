@@ -22,3 +22,9 @@
 .Footer-Text {
     color: white;
 }
+
+@media screen and (max-width:768px) {
+    .Footer {
+        width: 95%;
+    }
+}

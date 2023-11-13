@@ -10,16 +10,16 @@ const Card = (props) => {
             <div className='appartement-card'>
                 {LogementsData.map((logement) => (
                     <NavLink to={`/logement/${logement.id}`} key={logement.id}>
-                        <div className='toto'>
-                            <Logements
-                                key={logement.id}
-                                id={logement.id}
-                                title={logement.title}
-                                cover={logement.cover}
+
+                        <Logements
+                            key={logement.id}
+                            id={logement.id}
+                            title={logement.title}
+                            cover={logement.cover}
 
 
-                            />
-                        </div>
+                        />
+
                     </NavLink>
                 ))}
 

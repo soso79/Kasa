@@ -15,7 +15,7 @@ const Home = (props) => {
 
     return (
 
-        <div>
+        <div className='titi'>
             <Header />
             <section className='Container'>
 

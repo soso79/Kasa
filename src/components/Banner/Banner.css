@@ -16,6 +16,8 @@
 
 
 
+
+
 }
 
 
@@ -32,4 +34,11 @@
     opacity: 0.1;
 
 
+}
+
+
+@media screen and (max-width:768px) {
+    .BannerCan {
+        width: 100%;
+    }
 }

@@ -6,11 +6,12 @@
 
 
 
+
 }
 
 .logements img {
 
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
@@ -29,5 +30,17 @@
     font-size: 25px;
     padding: 5px 10px;
     /* Ajoutez un peu d'espacement autour du texte du titre */
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .logements {
+        width: 100%;
+
+        height: 280px;
+    }
+
+
 
 }
