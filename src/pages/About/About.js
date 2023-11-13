@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css";
-import Banner from '../../components/Banner/Banner';
+import BannerAbout from '../../components/BannerAbout/BannerAbout.jsx';
 import Collapse from '../../components/Collapse/Collapse'
 import data from '../../assets/collapse.json'
 import Header from '../../components/Header/Header';
@@ -17,7 +17,7 @@ const About = (props) => {
             <Header />
 
             <section className='AboutCan'>
-                <Banner />
+                <BannerAbout />
 
                 <Collapse data={data} />
             </section>
