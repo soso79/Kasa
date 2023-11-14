@@ -10,12 +10,14 @@ const Error = (props) => {
 
         <div className='Error-Can'>
             <Header />
+            <div className='Tony'>
+                <div className='ErrorLogo'>
+                    <img src={Photo} alt='page erreur' className='Error' />
+                    <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
+                </div>
 
-            <div className='ErrorLogo'>
-                <img src={Photo} alt='page erreur' className='Error' />
-                <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
+                <NavLink to="/" className="Error-Link">Retourner sur la page d’accueil</NavLink>
             </div>
-            <NavLink to="/" className="Error-Link">Retourner sur la page d’accueil</NavLink>
             <Footer />
 
 

@@ -4,15 +4,23 @@
     justify-content: space-between;
     width: 90%;
     margin: auto;
-    border: 2px solid red;
+
 }
 
+.Logements {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 2px solid red;
 
+
+}
 
 .drop {
 
     /* Espacement entre les éléments */
     width: 90%;
     margin: auto;
+    margin-bottom: 100px;
 
 }

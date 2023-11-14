@@ -5,17 +5,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 2px solid red;
+
+
 
 }
 
 .Error {
-    margin-top: 50px;
+    margin-top: 150px;
+
 }
 
 
 .Error-Text {
     display: block;
-    color: rgb(255, 0, 187);
+    color: #ff6060;
     font-size: 25px;
 
 }
@@ -23,4 +27,11 @@
 .Error-Link {
     margin-top: 160px;
     display: block;
+    color: #ff6060;
+}
+
+.Tony {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
 }

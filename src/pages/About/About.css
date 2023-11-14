@@ -1,16 +1,26 @@
-body {
-    margin: 0;
-    padding: 0;
+.About {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
 
-
-
 .AboutCan {
+    min-height: 70vh;
     width: 90%;
 
     margin: auto;
     padding-inline: 3rem;
 
 
+
+}
+
+@media screen and (max-width:768px) {
+    .AboutCan {
+        width: 100%;
+
+        padding: 0;
+    }
 }

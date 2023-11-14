@@ -17,11 +17,11 @@ const Home = (props) => {
 
         <div className='titi'>
             <Header />
-            <section className='Container'>
+            <div className='Container'>
 
                 <Banner />
                 <Card />
-            </section>
+            </div>
             <Footer />
 
 

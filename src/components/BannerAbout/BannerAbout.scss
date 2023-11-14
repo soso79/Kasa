@@ -2,16 +2,14 @@
     width: 100%;
     margin: auto;
     margin-bottom: 2rem;
-    min-height: 230px;
+    height: 230px;
     background-image: url("../../assets/img/About.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 35px;
-    display: grid;
-    place-content: center;
-    color: white;
-    position: relative;
+
+
 
 
 
@@ -26,11 +24,14 @@
 
 @media screen and (max-width:768px) {
     .BannerCanAbout {
-        width: 100%;
+
+        width: 90%;
+        margin: auto;
+        height: 250px;
+
+
+
     }
 
-    .Banner_Title {
 
-        width: 60%;
-    }
 }

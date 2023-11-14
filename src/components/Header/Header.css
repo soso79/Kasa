@@ -48,22 +48,29 @@
 
 
 
+
 }
 
 @media screen and (max-width:768px) {
     .head {
-        width: 100%;
+        width: 90%;
 
         justify-content: space-around;
     }
 
     .head-logo {
         margin-right: 0.5rem;
-        width: 50%;
+        width: 100%;
+
     }
 
     .head-nav-link {
 
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+
+    .test {
+        flex-wrap: wrap;
+        font-size: smaller;
     }
 }

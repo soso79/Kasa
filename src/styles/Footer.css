@@ -3,7 +3,7 @@
     background-color: black;
     bottom: 0;
     width: 99%;
-    margin-top: 400px;
+
 
 
 
@@ -25,6 +25,8 @@
 
 @media screen and (max-width:768px) {
     .Footer {
-        width: 95%;
+        width: 97%;
+        margin-top: 118px;
+
     }
 }

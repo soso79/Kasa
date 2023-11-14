@@ -16,11 +16,11 @@ const About = (props) => {
 
             <Header />
 
-            <section className='AboutCan'>
+            <div className='AboutCan'>
                 <BannerAbout />
 
                 <Collapse data={data} />
-            </section>
+            </div>
             <Footer />
         </div>
 
