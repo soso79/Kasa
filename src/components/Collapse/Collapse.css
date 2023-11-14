@@ -1,6 +1,6 @@
 .ContCollapse {
     font-size: 24px;
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
     border-radius: 5px;
 
@@ -41,7 +41,5 @@
     display: flex;
     gap: 35px;
 
-    @media (max-width: 1001px) {
-        display: block;
-    }
+
 }
