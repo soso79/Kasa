@@ -22,8 +22,8 @@ const Tag = () => {
 
 
         <div className="Logements-tag">
-            <h2>{logement.title}</h2>
-            <p>{logement.location}</p>
+            <h2 className='Logements_Title'>{logement.title}</h2>
+            <p className='Logements_Location'>{logement.location}</p>
             <div className="tags-container">{tagsList}</div>
         </div>
     )

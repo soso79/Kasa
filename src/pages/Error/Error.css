@@ -11,10 +11,7 @@
 
 }
 
-.Error {
-    margin-top: 150px;
 
-}
 
 
 .Error-Text {
@@ -33,5 +30,38 @@
 .Tony {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 80vh;
+}
+
+
+@media screen and (max-width:768px) {
+    .Tony {
+        border: 2px solid yellowgreen;
+        width: 100%;
+    }
+
+    .ErrorLogo {
+        width: 100%;
+
+
+    }
+
+    .Error {
+        width: 90%;
+    }
+
+    .Error-Text {
+        width: 100%;
+    }
+
+    .Error-Text span {
+        display: block;
+        /* Place le contenu du span sur une nouvelle ligne */
+
+
+
+
+    }
 }

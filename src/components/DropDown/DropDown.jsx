@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import Collapse from "../../components/Collapse/Collapse";
-
+import "./DropDown.scss"
 
 
 
@@ -20,6 +20,7 @@ const DropDown = () => {
 
     const data = [
         {
+
             title: 'Description',
             text: logement.description
         },
@@ -32,7 +33,9 @@ const DropDown = () => {
     ];
 
     return (
+
         <Collapse data={data} />
     );
+
 };
 export default DropDown

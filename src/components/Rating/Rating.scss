@@ -1,5 +1,5 @@
 .Logements-rate {
-    border: 2px solid rgb(255, 0, 204);
+
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .Logements-test {
-    border: 2px solid red;
+
     display: flex;
     width: 100%;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .essai {
     width: 100px;
-    border: 2px solid rgb(0, 255, 42);
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -40,4 +40,18 @@
 .Rate-picture {
     border-radius: 50%;
     height: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .Logements-rate {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    .Logements-test {
+        width: 50%;
+    }
 }

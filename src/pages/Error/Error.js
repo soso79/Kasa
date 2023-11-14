@@ -13,7 +13,7 @@ const Error = (props) => {
             <div className='Tony'>
                 <div className='ErrorLogo'>
                     <img src={Photo} alt='page erreur' className='Error' />
-                    <p className='Error-Text'>Oups! La page que vous demandez n existe pas.</p>
+                    <p className='Error-Text'>Oups! La page que <span>vous demandez n'existe pas.</span></p>
                 </div>
 
                 <NavLink to="/" className="Error-Link">Retourner sur la page d’accueil</NavLink>
