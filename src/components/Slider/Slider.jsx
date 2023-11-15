@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeft from "../../assets/arrow-left.png";
 import ArrowRight from "../../assets/arrow-right.png";
-import Error from "../../pages/Error/Error.js";
+
 import "./Slider.scss";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
