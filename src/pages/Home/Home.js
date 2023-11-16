@@ -10,7 +10,7 @@ import Footer from '../../components/Footer'
 
 
 
-const Home = (props) => {
+const Home = () => {
 
 
     return (

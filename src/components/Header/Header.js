@@ -17,11 +17,11 @@ const Header = (props) => {
         if (selectedLink === 'accueil') {
             // Code à exécuter lorsque le lien "Accueil" est cliqué
             console.log('Le lien "Accueil" a été cliqué.');
-            // Vous pouvez effectuer d'autres actions en réponse au clic ici
+            // on  effectue d'autres actions en réponse au clic ici
         } else if (selectedLink === 'apropos') {
             // Code à exécuter lorsque le lien "A propos" est cliqué
             console.log('Le lien "A propos" a été cliqué.');
-            // Vous pouvez effectuer d'autres actions en réponse au clic ici
+
         }
     }, [selectedLink]); // L'effet se déclenche lorsque selectedLink change
 

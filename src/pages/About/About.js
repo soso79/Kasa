@@ -10,7 +10,7 @@ import Footer from '../../components/Footer';
 
 
 
-const About = (props) => {
+const About = () => {
     return (
         <div className='About' >
 

@@ -10,7 +10,7 @@ import DropDown from "../../components/DropDown/DropDown.jsx";
 import Footer from "../../components/Footer.js";
 import Error from "../../pages/Error/Error.js";
 
-const Appartements = (props) => {
+const Appartements = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 

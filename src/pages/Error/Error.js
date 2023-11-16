@@ -5,7 +5,7 @@ import Header from '../../components/Header/Header';
 import Photo from '../../assets/404.png';
 import Footer from '../../components/Footer';
 
-const Error = (props) => {
+const Error = () => {
     return (
 
         <div className='Error-Can'>
