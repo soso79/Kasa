@@ -25,5 +25,10 @@
         padding: 0;
     }
 
+    .AboutColl {
+        width: 90%;
+        margin: auto;
+    }
+
 
 }

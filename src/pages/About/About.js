@@ -18,8 +18,9 @@ const About = (props) => {
 
             <div className='AboutCan'>
                 <BannerAbout />
-
-                <Collapse data={data} />
+                <div className='AboutColl'>
+                    <Collapse data={data} />
+                </div>
             </div>
             <Footer />
         </div>
