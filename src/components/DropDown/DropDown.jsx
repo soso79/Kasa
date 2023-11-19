@@ -13,11 +13,6 @@ const DropDown = () => {
     const logement = LogementsData.find((logement) => logement.id === id);
 
 
-
-
-
-
-
     const data = [
         {
 

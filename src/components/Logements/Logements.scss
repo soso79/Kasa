@@ -1,8 +1,10 @@
 .logements {
     position: relative;
     height: 380px;
-    width: 350px;
+    width: 100%;
     overflow: hidden;
+
+
 
 
 
@@ -12,8 +14,8 @@
 
 .logements img {
 
-    width: 350px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
 }

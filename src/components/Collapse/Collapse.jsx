@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Collapse.css';
+import './Collapse.scss';
 import ArrowDown from '../../assets/ArrowDown.png';
 import ArrowUp from '../../assets/ArrowUp.png'
 
@@ -16,9 +16,9 @@ function Collapse({ data }) {
     };
 
     return (
-        <div className={`CollapseHome${data.length === 2 ? 'Two' : ''}`}>
+        <div className={`Collapse${data.length === 2 ? 'Two' : ''}`}>
             {data.map((collapse, index) => (
-                <div className="ContCollapse" key={index}>
+                <div className="Collapse__Test" key={index}>
                     <div className="ContTittle" onClick={() => toggleCollapse(index)}>
                         <h3 className="CollapseTittle">{collapse.title}</h3>
                         {/* Changer l'icône en fonction de l'état d'ouverture */}

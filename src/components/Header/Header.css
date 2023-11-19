@@ -46,18 +46,11 @@
 .test {
     display: flex;
 
-
-
-
-
 }
 
 @media screen and (max-width:768px) {
     .head {
         width: 90%;
-
-
-
 
     }
 

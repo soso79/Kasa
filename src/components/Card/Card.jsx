@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Card.css';
-import Logements from '../../components/Logements/Logements';
+import './Card.scss';
+import Logements from '../Logements/Logements';
 import LogementsData from '../../assets/logements.json';
 import { NavLink } from 'react-router-dom';
 
@@ -15,13 +15,13 @@ const Card = (props) => {
     };
 
     return (
-        <div className='appartement-can'>
-            <ul className='appartement-card'>
+        <div className='Card'>
+            <ul className='Card__Can'>
                 {LogementsData.map((logement) => (
-                    <li className='appartement-item' key={logement.id}>
+                    <li className='Card__Item' key={logement.id}>
                         <NavLink to={`/logement/${logement.id}`}>
                             <div
-                                className={`card ${logement === selectedLogement ? 'selected' : ''}`}
+                                className={`Card__Selected ${logement === selectedLogement ? 'selected' : ''}`}
                                 onClick={() => handleCardClick(logement)} // Gestionnaire d'événements de clic
                             >
                                 <Logements
