@@ -1,8 +1,12 @@
 .Footer {
-    margin: auto;
+
     background-color: black;
-    bottom: 0;
-    width: 99%;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid red;
+
+
+
 
 
 
@@ -17,6 +21,7 @@
 .Footer-Logo {
     filter: brightness(0) invert(1);
     height: 50px;
+    margin-top: 10px;
 }
 
 .Footer-Text {
@@ -25,7 +30,7 @@
 
 @media screen and (max-width:768px) {
     .Footer {
-        width: 97%;
+        width: 100%;
         margin-top: 118px;
 
     }

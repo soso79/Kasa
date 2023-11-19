@@ -10,11 +10,16 @@
     border-radius: 35px;
     display: grid;
     place-content: center;
-    color: white;
+
+
     position: relative;
 
 }
 
+
+.Banner_Title {
+    color: white;
+}
 
 
 
@@ -24,14 +29,20 @@
 @media screen and (max-width:768px) {
     .BannerCan {
         width: 100%;
+        min-height: 150px;
         display: flex;
         align-items: center;
+        opacity: 0.9;
+
+
     }
 
     .Banner_Title {
 
         width: 100%;
         font-size: 35px;
+        margin-left: 20px;
+
 
 
 
