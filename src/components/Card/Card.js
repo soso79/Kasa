@@ -16,24 +16,25 @@ const Card = (props) => {
 
     return (
         <div className='appartement-can'>
-            <div className='appartement-card'>
+            <ul className='appartement-card'>
                 {LogementsData.map((logement) => (
-                    <NavLink to={`/logement/${logement.id}`} key={logement.id}>
-                        <div
-                            className={`card ${logement === selectedLogement ? 'selected' : ''}`}
-                            key={logement.id}
-                            onClick={() => handleCardClick(logement)} // Gestionnaire d'événements de clic
-                        >
-                            <Logements
-                                key={logement.id}
-                                id={logement.id}
-                                title={logement.title}
-                                cover={logement.cover}
-                            />
-                        </div>
-                    </NavLink>
+                    <li className='appartement-item' key={logement.id}>
+                        <NavLink to={`/logement/${logement.id}`}>
+                            <div
+                                className={`card ${logement === selectedLogement ? 'selected' : ''}`}
+                                onClick={() => handleCardClick(logement)} // Gestionnaire d'événements de clic
+                            >
+                                <Logements
+                                    key={logement.id}
+                                    id={logement.id}
+                                    title={logement.title}
+                                    cover={logement.cover}
+                                />
+                            </div>
+                        </NavLink>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </div>
     );
 };

@@ -15,7 +15,7 @@
 
 }
 
-.appartement-card a {
+.appartement-item {
 
     border-radius: 20px;
     width: 30%;
@@ -29,7 +29,7 @@
 
 
 @media screen and (max-width:768px) {
-    .appartement-card a {
+    .appartement-item {
         width: 100%;
 
     }
