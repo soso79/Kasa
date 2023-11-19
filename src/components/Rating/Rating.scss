@@ -5,7 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
 }
+
+
 
 .Logements-test {
 
@@ -16,6 +20,20 @@
     gap: 0.5em;
 
 
+
+}
+
+.soso {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.star {
+    margin: 2px;
 }
 
 .essai {
@@ -24,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
 
 
 }
@@ -47,7 +66,10 @@
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
+
+
         justify-content: space-between;
+        border: 2px solid red;
 
     }
 
@@ -60,4 +82,11 @@
         border-radius: 50%;
         height: 80px;
     }
+
+    .soso {
+        display: flex;
+        justify-content: flex-start;
+        border: 2px solid red;
+    }
+
 }

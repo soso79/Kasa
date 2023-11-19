@@ -34,7 +34,9 @@ const Rating = () => {
                     <p className="Logements-titi"> {logement.host.name}</p></div>
                 <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
             </div>
-            <p>{renderRatingStars(logement.rating)}</p>
+            <div className='soso'>
+                <p className='stars'>{renderRatingStars(logement.rating)}</p>
+            </div>
         </div>
 
     );
