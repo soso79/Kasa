@@ -22,7 +22,7 @@ function Collapse({ data }) {
                     <div className="Collapse__Can" onClick={() => toggleCollapse(index)}>
                         <h3 className="Collapse__Tittle">{collapse.title}</h3>
                         {/* Changer l'icône en fonction de l'état d'ouverture */}
-                        <img src={openIndexes.includes(index) ? ArrowUp : ArrowDown} alt="Arrow" />
+                        <img className='Collapse__Img' src={openIndexes.includes(index) ? ArrowUp : ArrowDown} alt="Arrow" />
                     </div>
                     {/* Affiche le texte de la section uniquement si elle est ouverte */}
                     {openIndexes.includes(index) && (
