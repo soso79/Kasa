@@ -1,0 +1,43 @@
+.About {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+
+    &__Can {
+        min-height: 70vh;
+        width: 90%;
+        margin: auto;
+        padding-inline: 3rem;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .About {
+        &__Can {
+            width: 100%;
+            padding: 0;
+
+        }
+
+        &__Coll {
+            width: 90%;
+            margin: auto;
+        }
+
+    }
+
+}

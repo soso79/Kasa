@@ -7,8 +7,8 @@ import Rating from "../../components/Rating/Rating.jsx";
 import Slider from "../../components/Slider/Slider.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import DropDown from "../../components/DropDown/DropDown.jsx";
-import Footer from "../../components/Footer.js";
-import Error from "../../pages/Error/Error.js";
+import Footer from "../../components/Footer/Footer.jsx";
+import Error from "../../pages/Error/Error.jsx";
 
 const Appartements = () => {
     const { id } = useParams();

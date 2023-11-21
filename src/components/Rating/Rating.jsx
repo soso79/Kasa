@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Rating.scss";
-import Error from "../../pages/Error/Error.js";
+
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 import StarFull from "../../assets/star-active.png";
@@ -17,9 +17,9 @@ const Rating = () => {
         const stars = [];
         for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.push(<img key={i} src={StarFull} alt="Full Star" className="star" />);
+                stars.push(<img key={i} src={StarFull} alt="Full Star" className="Star" />);
             } else {
-                stars.push(<img key={i} src={StarEmpty} alt="Empty Star" className="star" />);
+                stars.push(<img key={i} src={StarEmpty} alt="Empty Star" className="Star" />);
             }
         }
         return stars;
@@ -28,14 +28,14 @@ const Rating = () => {
     return (
 
 
-        <div className="Logements-rate">
-            <div className="Logements-test">
-                <div className="essai">
-                    <p className="Logements-titi"> {logement.host.name}</p></div>
-                <img className="Rate-picture" src={logement.host.picture} alt={logement.host.name} />
+        <div className="Rate">
+            <div className="Rate__Section">
+                <div className="Rate__Can">
+                    <p className="Rate__Name"> {logement.host.name}</p></div>
+                <img className="Rate__Picture" src={logement.host.picture} alt={logement.host.name} />
             </div>
-            <div className='soso'>
-                <p className='stars'>{renderRatingStars(logement.rating)}</p>
+            <div className='Rate__Stars__Can'>
+                <p className='Rate__Stars'>{renderRatingStars(logement.rating)}</p>
             </div>
         </div>
 

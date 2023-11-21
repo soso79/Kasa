@@ -1,10 +1,10 @@
 import React from 'react';
-import "./About.css";
+import "./About.scss";
 import BannerAbout from '../../components/BannerAbout/BannerAbout.jsx';
-import Collapse from '../../components/Collapse/Collapse'
+import Collapse from '../../components/Collapse/Collapse.jsx'
 import data from '../../assets/collapse.json'
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 
 
 
@@ -16,9 +16,9 @@ const About = () => {
 
             <Header />
 
-            <div className='AboutCan'>
+            <div className='About__Can'>
                 <BannerAbout />
-                <div className='AboutColl'>
+                <div className='About__Coll'>
                     <Collapse data={data} />
                 </div>
             </div>

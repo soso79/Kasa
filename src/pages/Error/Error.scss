@@ -1,0 +1,66 @@
+.Error {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    &__Text {
+        display: block;
+        color: #ff6060;
+        font-size: 25px;
+
+    }
+
+    &__Link {
+        margin-top: 160px;
+        display: block;
+        color: #ff6060;
+    }
+
+    &__Can {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    .Error {
+
+        &__Can {
+
+            width: 100%;
+        }
+
+        &__Logo {
+            width: 100%;
+
+
+        }
+
+        &__Img {
+            width: 90%;
+        }
+
+        &__Text {
+            width: 100%;
+        }
+
+        &__Text span {
+            display: block;
+            /* Place le contenu du span sur une nouvelle ligne */
+
+        }
+
+    }
+
+
+}

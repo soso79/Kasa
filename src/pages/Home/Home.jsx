@@ -1,11 +1,9 @@
 import React from 'react';
-
-
-import './Home.css';
-import Header from '../../components/Header/Header';
-import Banner from '../../components/Banner/Banner';
-import Card from '../../components/Card/Card';
-import Footer from '../../components/Footer'
+import './Home.scss';
+import Header from '../../components/Header/Header.jsx';
+import Banner from '../../components/Banner/Banner.jsx';
+import Card from '../../components/Card/Card.jsx';
+import Footer from '../../components/Footer/Footer.jsx'
 
 
 
@@ -15,9 +13,9 @@ const Home = () => {
 
     return (
 
-        <div className='titi'>
+        <div className='Home'>
             <Header />
-            <div className='Container'>
+            <div className='Home__Container'>
 
                 <Banner />
                 <Card />

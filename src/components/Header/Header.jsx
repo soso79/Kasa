@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/img/LOGO.png';
-import './Header.css';
+import './Header.scss';
 import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
@@ -26,23 +26,23 @@ const Header = (props) => {
     }, [selectedLink]); // L'effet se déclenche lorsque selectedLink change
 
     return (
-        <header className='head'>
+        <header className='Head'>
             <NavLink to="/">
-                <div className='head-logo'>
+                <div className='Head__Logo'>
                     <img src={Logo} alt='logo kasa' />
                 </div>
             </NavLink>
-            <div className='test'>
+            <div className='Head__Can'>
                 <NavLink
                     to="/"
-                    className={`head-nav-link ${selectedLink === 'accueil' ? 'selected' : ''}`}
+                    className={`Head__Nav__Link ${selectedLink === 'accueil' ? 'selected' : ''}`}
                     onClick={() => handleLinkClick('accueil')}
                 >
                     <div>Accueil</div>
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={`head-nav-link ${selectedLink === 'apropos' ? 'selected' : ''}`}
+                    className={`Head__Nav__Link ${selectedLink === 'apropos' ? 'selected' : ''}`}
                     onClick={() => handleLinkClick('apropos')}
                 >
                     <div>A propos</div>

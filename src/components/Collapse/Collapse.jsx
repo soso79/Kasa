@@ -18,15 +18,15 @@ function Collapse({ data }) {
     return (
         <div className={`Collapse${data.length === 2 ? 'Two' : ''}`}>
             {data.map((collapse, index) => (
-                <div className="Collapse__Test" key={index}>
-                    <div className="ContTittle" onClick={() => toggleCollapse(index)}>
-                        <h3 className="CollapseTittle">{collapse.title}</h3>
+                <div className="Collapse__Container" key={index}>
+                    <div className="Collapse__Can" onClick={() => toggleCollapse(index)}>
+                        <h3 className="Collapse__Tittle">{collapse.title}</h3>
                         {/* Changer l'icône en fonction de l'état d'ouverture */}
                         <img src={openIndexes.includes(index) ? ArrowUp : ArrowDown} alt="Arrow" />
                     </div>
                     {/* Affiche le texte de la section uniquement si elle est ouverte */}
                     {openIndexes.includes(index) && (
-                        <div className="CollapseText">{collapse.text}</div>
+                        <div className="Collapse__Text">{collapse.text}</div>
                     )}
                 </div>
             ))}

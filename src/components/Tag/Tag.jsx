@@ -15,16 +15,16 @@ const Tag = () => {
 
     // Pour afficher les tags avec des classes CSS
     const tagsList = logement.tags.map((tag, index) => (
-        <li key={index} className="tag">{tag}</li>
+        <li key={index} className="Tags">{tag}</li>
     ));
 
     return (
 
 
-        <div className="Logements-tag">
-            <h2 className='Logements_Title'>{logement.title}</h2>
-            <p className='Logements_Location'>{logement.location}</p>
-            <ul className="tags-container">{tagsList}</ul>
+        <div className="Tag">
+            <h2 className='Tag__Title'>{logement.title}</h2>
+            <p className='Tag__Location'>{logement.location}</p>
+            <ul className="Tag__List">{tagsList}</ul>
         </div>
     )
 }

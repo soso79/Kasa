@@ -1,42 +1,42 @@
-.titi {
+.Home {
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 
 
-
-}
-
-.content {
-    flex: 1;
-}
-
-
-.Container {
-
-    width: 90%;
-    margin: auto;
-    padding-inline: 3rem;
-
-    margin-bottom: 150px;
-
-
-}
-
-@media screen and (max-width:768px) {
-    .Container {
+    &__Container {
+        width: 90%;
         margin: auto;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-
-
+        padding-inline: 3rem;
+        margin-bottom: 150px;
 
     }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .Home {
+
+        &__Container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+
+
+        }
+    }
+
+
+
+
 }
 
 

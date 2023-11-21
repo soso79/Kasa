@@ -29,21 +29,21 @@ const Slider = () => {
     return (
         <div className="Slider">
             {/* ... Autres contenus du composant Logements */}
-            <div className="Logements-img">
-                <img className="appart" src={logement.pictures[currentImageIndex]} alt="Logement" />
+            <div className="Slider__Can">
+                <img className="Slider__Img" src={logement.pictures[currentImageIndex]} alt="Logement" />
                 <img
-                    className="prev-arrow"
+                    className="Slider__Prev__Arrow"
                     src={ArrowRight}
                     alt="Image précédente"
                     onClick={handlePreviousImage}
                 />
                 <img
-                    className="next-arrow"
+                    className="Slider__Next__Arrow"
                     src={ArrowLeft}
                     alt="Image suivante"
                     onClick={handleNextImage}
                 />
-                <p className="Compteur"> {currentImageIndex + 1}/{logement.pictures.length}</p>
+                <p className="Slider__Compteur"> {currentImageIndex + 1}/{logement.pictures.length}</p>
             </div>
         </div>
     );

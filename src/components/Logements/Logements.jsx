@@ -8,10 +8,10 @@ const Logements = ({ id, title, cover }) => {
 
 
 
-        <div className='logements'>
+        <div className='House'>
 
-            <img src={cover} alt={title} />
-            <h2 className='logements-title'>{title}</h2>
+            <img className='House__Img' src={cover} alt={title} />
+            <h2 className='House__Title'>{title}</h2>
 
 
 
@@ -24,6 +24,6 @@ const Logements = ({ id, title, cover }) => {
 
 export default Logements;
 
-/*<h2 className='logements-title'>{title}</h2>*/
+
 
 
