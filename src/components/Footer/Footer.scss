@@ -8,34 +8,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
-
-
-
-
-
-
-
     /* Ajoutez une couleur de fond pour le footer */
     text-align: center;
     /* Centrez le contenu horizontalement */
     padding: 10px;
     /* Ajoutez de l'espace autour du contenu du footer */
-}
 
-.Footer-Logo {
-    filter: brightness(0) invert(1);
-    height: 50px;
-    margin-bottom: 40px;
+    &__Logo {
+        filter: brightness(0) invert(1);
+        height: 50px;
+        margin-bottom: 40px;
 
+    }
 
-}
-
-.Footer-Text {
-    color: white;
-
+    &__Text {
+        color: white;
+    }
 
 }
+
+
+
+
 
 @media screen and (max-width:768px) {
     .Footer {
@@ -43,9 +37,11 @@
         margin-top: 118px;
         justify-content: center;
 
+        &__Logo {
+            margin: 0;
+        }
+
     }
 
-    .Footer-Logo {
-        margin: 0;
-    }
+
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../../assets/img/LOGO.png'
-import './Footer.css'
+import './Footer.scss'
 const Footer = (props) => {
     return (
         <div className='Footer'>
 
-            <img src={Logo} alt='logo kasa' className='Footer-Logo' />
-            <p className='Footer-Text'> © 2020 Kasa. All rights reserved</p>
+            <img src={Logo} alt='logo kasa' className='Footer__Logo' />
+            <p className='Footer__Text'> © 2020 Kasa. All rights reserved</p>
         </div>
     );
 };

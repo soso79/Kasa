@@ -11,7 +11,7 @@ const Card = (props) => {
     // Fonction pour gérer le clic sur une carte de logement
     const handleCardClick = (logement) => {
         setSelectedLogement(logement);
-        // Vous pouvez effectuer d'autres actions en réponse au clic ici
+
     };
 
     return (
