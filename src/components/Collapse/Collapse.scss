@@ -34,37 +34,6 @@
         font-size: 30px;
     }
 
-    &__Can img {
-
-        transition: transform 0.3s ease 0.2s;
-    }
-
-    &__Can img::before,
-    &__Can img::after {
-        content: '';
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        background-size: contain;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease;
-    }
-
-    &__Can.open img::before {
-        transform: rotate(180deg);
-    }
-
-    &__Can.open img::after {
-        transform: rotate(0deg);
-    }
-
-    &__Can img::before {
-        background-image: url('../../assets/ArrowDown.png');
-    }
-
-    &__Can img::after {
-        background-image: url('../../assets/ArrowUp.png');
-    }
 
 
 }
