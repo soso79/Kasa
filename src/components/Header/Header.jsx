@@ -3,7 +3,7 @@ import Logo from '../../assets/img/LOGO.png';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 
-const Header = (props) => {
+const Header = () => {
     // État pour suivre quel lien a été cliqué
     const [selectedLink, setSelectedLink] = useState(null);
 
@@ -23,7 +23,8 @@ const Header = (props) => {
             console.log('Le lien "A propos" a été cliqué.');
 
         }
-    }, [selectedLink]); // L'effet se déclenche lorsque selectedLink change
+    }, [selectedLink]); // L'effet se déclenche lorsque selectedLink change,Cela garantit que les actions appropriées sont déclenchées en fonction du lien sélectionné par l'utilisateur.
+
 
     return (
         <header className='Head'>

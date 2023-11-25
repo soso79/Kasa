@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/img/LOGO.png'
 import './Footer.scss'
-const Footer = (props) => {
+const Footer = () => {
     return (
         <div className='Footer'>
 

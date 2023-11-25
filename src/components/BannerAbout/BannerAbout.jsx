@@ -1,7 +1,7 @@
 import React from "react";
 import "./BannerAbout.scss";
 
-function BannerAbout(props) {
+const BannerAbout = () => {
     return (
         <div className="BannerCanAbout">
 

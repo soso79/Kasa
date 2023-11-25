@@ -4,7 +4,7 @@ import Logements from '../Logements/Logements';
 import LogementsData from '../../assets/logements.json';
 import { NavLink } from 'react-router-dom';
 
-const Card = (props) => {
+const Card = () => {
     // État local pour suivre la carte de logement actuellement cliquée
     const [selectedLogement, setSelectedLogement] = useState(null);
 
