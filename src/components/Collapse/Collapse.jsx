@@ -16,8 +16,10 @@ const Collapse = ({ data }) => {
     };
 
     return (
+        //Utilisation de la classe CSS "Collapse" avec conditionnelle basée sur la longueur de "data"
         <div className={`Collapse${data.length === 2 ? 'Two' : ''}`}>
             {data.map((collapse, index) => (
+                // À chaque itération, "collapse" contient un élément de "data" et "index" est l'indice actuel
                 <div className="Collapse__Container" key={index}>
                     <div className="Collapse__Can" onClick={() => toggleCollapse(index)}>
                         <h3 className="Collapse__Tittle">{collapse.title}</h3>
