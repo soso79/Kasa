@@ -1,10 +1,10 @@
 import React from "react";
 import "./Banner.scss";
 
-const Banner = ({ titre }) => {
+const Banner = () => {
     return (
         <div className="Banner">
-            <h1 className="Banner__Title" src={titre}>Chez vous, <span>partout et ailleurs</span></h1>
+            <h1 className="Banner__Title" >Chez vous, <span>partout et ailleurs</span></h1>
         </div>
     );
 }
