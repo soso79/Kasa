@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Logo from '../../assets/img/LOGO.png';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
@@ -11,20 +11,6 @@ const Header = () => {
     const handleLinkClick = (link) => {
         setSelectedLink(link);
     };
-
-    // useEffect pour effectuer des actions en réponse au clic sur les liens
-    useEffect(() => {
-        if (selectedLink === 'accueil') {
-            // Code à exécuter lorsque le lien "Accueil" est cliqué
-            console.log('Le lien "Accueil" a été cliqué.');
-            // on  effectue d'autres actions en réponse au clic ici
-        } else if (selectedLink === 'apropos') {
-            // Code à exécuter lorsque le lien "A propos" est cliqué
-            console.log('Le lien "A propos" a été cliqué.');
-
-        }
-    }, [selectedLink]); // L'effet se déclenche lorsque selectedLink change,Cela garantit que les actions appropriées sont déclenchées en fonction du lien sélectionné par l'utilisateur.
-
 
     return (
         <header className='Head'>
