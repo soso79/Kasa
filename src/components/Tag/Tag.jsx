@@ -2,16 +2,12 @@
 
 import React from 'react';
 import "./Tag.scss";
-
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 
 const Tag = () => {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
-
-
-
 
     // Pour afficher les tags avec des classes CSS
     const tagsList = logement.tags.map((tag, index) => (
