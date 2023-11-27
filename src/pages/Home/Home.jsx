@@ -8,7 +8,7 @@ import Footer from '../../components/Footer/Footer.jsx'
 
 
 
-const Home = () => {
+function Home() {
 
 
     return (

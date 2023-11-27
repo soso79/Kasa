@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import Erreur from '../../components/Erreur/Erreur.jsx';
 
-const Error = () => {
+function Error() {
     return (
 
         <div className='Error'>

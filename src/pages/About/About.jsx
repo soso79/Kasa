@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer.jsx';
 
 
 
-const About = () => {
+function About() {
     return (
         <div className='About' >
 
