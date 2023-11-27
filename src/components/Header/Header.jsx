@@ -18,7 +18,7 @@ function Header() {
         <header className='Head'>
             <NavLink to="/">
                 <div className='Head__Logo'>
-                    <img src={Logo} alt='logo kasa' />
+                    <img className='Head__Kasa' src={Logo} alt='logo kasa' />
                 </div>
             </NavLink>
             <div className='Head__Can'>

@@ -20,7 +20,7 @@
     &__Nav__Link {
         text-decoration: none;
         color: #ff6060;
-        margin-left: 50px;
+        margin-left: 20px;
         font-size: 30px;
     }
 
@@ -58,6 +58,44 @@
 
             margin-left: 20px;
             font-size: 20px;
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+    .Head {
+        width: 90%;
+
+        &__Can {
+            flex-wrap: wrap;
+            font-size: smaller;
+        }
+
+        &__Logo {
+
+            width: 70%;
+            margin-right: 0;
+
+        }
+
+        &__Kasa {
+            width: 100%;
+            margin-right: 0;
+        }
+
+
+
+        &__Nav__Link {
+
+
+            width: auto;
+            margin-left: 0px;
+            margin-right: 5px;
+            font-size: 10px;
+
         }
 
     }
