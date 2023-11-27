@@ -8,7 +8,7 @@ import "./DropDown.scss"
 
 
 
-const DropDown = () => {
+function DropDown() {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 

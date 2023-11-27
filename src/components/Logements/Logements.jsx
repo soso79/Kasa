@@ -3,7 +3,7 @@ import './Logements.scss';
 
 
 
-const Logements = ({ title, cover }) => {
+function Logements({ title, cover }) {
     return (
 
 

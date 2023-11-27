@@ -4,7 +4,7 @@ import Photo from '../../assets/404.png';
 import { NavLink } from "react-router-dom";
 
 
-const Erreur = () => {
+function Erreur() {
 
     return (
 

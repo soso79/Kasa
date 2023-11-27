@@ -3,7 +3,7 @@ import Logo from '../../assets/img/LOGO.png';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+function Header() {
     // État pour suivre quel lien a été cliqué
     const [selectedLink, setSelectedLink] = useState(null);
 

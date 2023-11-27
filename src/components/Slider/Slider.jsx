@@ -6,7 +6,7 @@ import "./Slider.scss";
 import { useParams } from "react-router-dom";
 import LogementsData from "../../assets/logements.json";
 
-const Slider = () => {
+function Slider() {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 

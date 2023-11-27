@@ -7,7 +7,7 @@ import StarFull from "../../assets/star-active.png";
 import StarEmpty from "../../assets/star-inactive.png";
 
 
-const Rating = () => {
+function Rating() {
     const { id } = useParams();
     const logement = LogementsData.find((logement) => logement.id === id);
 

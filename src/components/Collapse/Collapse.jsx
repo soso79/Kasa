@@ -3,7 +3,7 @@ import './Collapse.scss';
 import ArrowDown from '../../assets/ArrowDown.png';
 import ArrowUp from '../../assets/ArrowUp.png'
 
-const Collapse = ({ data }) => {
+function Collapse({ data }) {
     // État local pour suivre les indices des sections ouvertes
     const [openIndexes, setOpenIndexes] = useState([]);
 
