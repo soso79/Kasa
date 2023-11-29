@@ -25,7 +25,7 @@ function Appartements() {
                 <Tag />
                 <Rating />
             </div>
-            <div className="drop">
+            <div className="Drop">
                 <DropDown />
             </div>
             <Footer />
